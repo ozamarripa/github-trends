@@ -4,6 +4,7 @@
   "description": "App showing Github trends using GraphQL",
   "main": "index.js",
   "scripts": {
+    "serve": "./node_modules/.bin/webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ozamarripa/github-trends/issues"
   },
-  "homepage": "https://github.com/ozamarripa/github-trends#readme"
+  "homepage": "https://github.com/ozamarripa/github-trends#readme",
+  "devDependencies": {
+    "webpack": "^3.5.5"
+  }
 }
