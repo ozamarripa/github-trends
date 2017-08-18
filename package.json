@@ -1,0 +1,19 @@
+{
+  "name": "github-trends",
+  "version": "1.0.0",
+  "description": "App showing Github trends using GraphQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ozamarripa/github-trends.git"
+  },
+  "author": "Omar Zamarripa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ozamarripa/github-trends/issues"
+  },
+  "homepage": "https://github.com/ozamarripa/github-trends#readme"
+}
