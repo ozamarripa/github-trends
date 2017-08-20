@@ -1,6 +1,7 @@
 const path = require('path');
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const webpack = require("webpack")
 
 module.exports = {
   entry: {
@@ -8,11 +9,13 @@ module.exports = {
   },
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: "/"
   },
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: "./dist"
+    contentBase: "./dist",
+    hot: true
   },
   module: {
     rules: [
@@ -35,6 +38,7 @@ module.exports = {
     new CleanWebpackPlugin(["dist"]),
     new CopyWebpackPlugin([
       {from: 'index.html', to: 'index.html'}
-    ])
+    ]),
+    new webpack.HotModuleReplacementPlugin()
   ]
 };
