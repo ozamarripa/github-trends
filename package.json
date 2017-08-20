@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/ozamarripa/github-trends#readme",
   "devDependencies": {
+    "clean-webpack-plugin": "^0.1.16",
+    "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.5",
     "file-loader": "^0.11.2",
     "style-loader": "^0.18.2",
