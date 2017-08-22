@@ -2,18 +2,17 @@ import "./styles.css"
 import Icon from "./bg.jpg"
 
 function component() {
-  var wrapper = document.createElement("div")
+  const wrapper = document.createElement("div")
   wrapper.classList.add("flexcontainer")
-  var element = document.createElement("p")
+  const element = document.createElement("p")
 
   element.innerHTML = "Github Trends"
   element.classList.add("content")
 
   wrapper.appendChild(element)
 
-  var myIcon = new Image();
+  const myIcon = new Image()
   myIcon.src = Icon
-
   // wrapper.appendChild(myIcon)
   return wrapper
 }
