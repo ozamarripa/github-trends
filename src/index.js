@@ -1,13 +1,13 @@
-import "./styles.css"
-import Icon from "./bg.jpg"
+import './styles.css'
+import Icon from './bg.jpg'
 
 function component() {
-  const wrapper = document.createElement("div")
-  wrapper.classList.add("flexcontainer")
-  const element = document.createElement("p")
+  const wrapper = document.createElement('div')
+  wrapper.classList.add('flexcontainer')
+  const element = document.createElement('p')
 
-  element.innerHTML = "Github Trends"
-  element.classList.add("content")
+  element.innerHTML = 'Github Trends'
+  element.classList.add('content')
 
   wrapper.appendChild(element)
 

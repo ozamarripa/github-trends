@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",
+    "lint": "eslint src/",
     "start": "webpack-dev-server --open",
     "serve": "http-server dist -p 3000",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,12 +29,18 @@
     "clean-webpack-plugin": "^0.1.16",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.5",
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.3.0",
     "file-loader": "^0.11.2",
     "style-loader": "^0.18.2",
     "webpack": "^3.5.5",
     "webpack-dev-server": "^2.7.1"
   },
   "dependencies": {
+    "babel-eslint": "^7.2.3",
     "http-server": "^0.10.0"
   }
 }
