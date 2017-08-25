@@ -1,20 +1,14 @@
+import React from 'react'
+import ReactDom from 'react-dom'
 import './styles.css'
-import Icon from './bg.jpg'
 
 function component() {
-  const wrapper = document.createElement('div')
-  wrapper.classList.add('flexcontainer')
-  const element = document.createElement('p')
-
-  element.innerHTML = 'Github Trends'
-  element.classList.add('content')
-
-  wrapper.appendChild(element)
-
-  const myIcon = new Image()
-  myIcon.src = Icon
-  // wrapper.appendChild(myIcon)
-  return wrapper
+  const content = React.createElement('p',
+    { className: 'content' },
+    'Github Trends',
+  )
+  const app = React.createElement('div', { className: 'flexcontainer' }, content)
+  return app
 }
 
-document.body.appendChild(component())
+ReactDom.render(component(), document.getElementById('root'))

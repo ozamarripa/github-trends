@@ -7,6 +7,11 @@ body {
   font-weight: 300;
   font-size: 1rem;
 }
+
+#root {
+  height: 100%;
+}
+
 .content {
   color: white;
 }
