@@ -1,5 +1,5 @@
 {
-  "extends": "airbnb",
+  "extends": ["airbnb", "prettier"],
 
   "parser": "babel-eslint",
 
@@ -10,8 +10,9 @@
     "mocha": true
   },
 
+  "plugins": ["prettier"],
+
   "rules": {
     "semi": ["error", "never"]
   }
-
 }
